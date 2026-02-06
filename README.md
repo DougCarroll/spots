@@ -1,12 +1,12 @@
 # Spots
 
-GPX waypoint files for navigation (Berry Islands, Exumas, Great Bahama Bank, etc.). This folder can stay in sync with GitHub so you have the same waypoints on more than one computer.
+GPX waypoint files for navigation (Berry Islands, Exumas, Great Bahama Bank, etc.). You can keep a copy of this folder on your computer that stays in sync with the latest waypoints on GitHub.
 
 ---
 
 ## What you need first
 
-You need two free programs installed: **Git** and **Python 3**. The sync scripts will tell you if something is missing and can help you install it.
+You need two free programs installed: **Git** and **Python 3**. The sync script will tell you if something is missing and can help you install it.
 
 ### Install Git and Python — by computer type
 
@@ -42,73 +42,47 @@ You need two free programs installed: **Git** and **Python 3**. The sync scripts
 
 ---
 
-## Two ways to use this folder
-
-- **This computer has the main Spots folder** (you add or edit waypoints here)  
-  → Use **“Sync this folder to GitHub”** so your changes are saved online.
-
-- **This computer should have a copy that matches GitHub** (e.g. a second PC or boat laptop)  
-  → Use **“Sync a folder from GitHub”** to download or update that copy.
-
----
-
-## Sync this folder to GitHub
-
-Use this on the computer where you keep your main Spots folder (the one you want to send *to* GitHub).
-
-1. Put this whole **Spots** folder somewhere you’ll remember (e.g. Documents, Desktop, or iCloud).
-2. Open a terminal:
-   - **Mac:** Open **Terminal** and type: `cd ` (with a space), then drag the **Spots** folder onto the Terminal window and press Enter.
-   - **Windows:** Open **Command Prompt** or **PowerShell**, type: `cd ` (with a space), then drag the **Spots** folder into the window and press Enter.
-   - **Linux:** Open a terminal, then type: `cd ` and the path to the Spots folder (or drag the folder in).
-3. Run the sync script:
-   - **Mac / Linux:** type: `python3 sync_to_github.py` and press Enter.  
-   - **Windows:** type: `python sync_to_github.py` and press Enter.
-4. The first time, the script may ask you to install Git or log in to GitHub. Do what it says.
-5. When it finishes, your folder is synced to GitHub. You can run the same command anytime you’ve added or changed waypoints.
-
-**Optional — run every hour:** After a sync, the script may ask: “Set up hourly job now?” If you type **y** and press Enter, it will set up your computer to sync this folder to GitHub once every hour automatically.
-
----
-
-## Sync a folder from GitHub (get or update a copy)
-
-Use this on any computer where you want a **copy** of the Spots folder that stays in sync with GitHub (e.g. a second computer or a chart computer).
-
-### First time — create a new folder that’s a copy of GitHub
+## Get a copy of the Spots folder (first time)
 
 1. Decide where you want the folder (e.g. **Desktop** or **Documents**). You’ll give that path in the next step.
 2. Get the sync script onto this computer:
-   - Either **clone the repo once:**  
-     - **Mac / Linux:** In Terminal: `cd ~/Desktop` then `git clone https://github.com/DougCarroll/spots.git`  
-     - **Windows:** In Command Prompt: `cd Desktop` then `git clone https://github.com/DougCarroll/spots.git`  
-     - That creates a folder named **spots** with all the files and the script inside.
-   - Or **download** the repo from GitHub (green “Code” → “Download ZIP”), unzip it, and remember where you put it.
-3. Open a terminal in that folder (same way as in “Sync this folder to GitHub” — `cd` into the folder).
-4. Run:
-   - **Mac / Linux:** `python3 sync_from_github.py /path/to/where/you/want/the/copy`  
-     Example: `python3 sync_from_github.py ~/Desktop/SpotsCopy`  
+   - **Mac / Linux:** Open Terminal. Type: `cd ~/Desktop` and press Enter. Then type: `git clone https://github.com/DougCarroll/spots.git` and press Enter. That creates a folder named **spots** with all the files and the script inside.
+   - **Windows:** Open Command Prompt or PowerShell. Type: `cd Desktop` and press Enter. Then type: `git clone https://github.com/DougCarroll/spots.git` and press Enter. That creates a folder named **spots** with all the files and the script inside.
+   - **Alternative:** On GitHub, click the green **Code** button → **Download ZIP**. Unzip the file and remember where you put the **spots** folder.
+3. Open a terminal in that **spots** folder:
+   - **Mac:** In Terminal, type: `cd ` (with a space), then drag the **spots** folder onto the Terminal window and press Enter.
+   - **Windows:** In Command Prompt, type: `cd ` (with a space), then drag the **spots** folder into the window and press Enter.
+   - **Linux:** In the terminal, type: `cd ` and the path to the spots folder (or drag the folder in).
+4. Run the sync script to create your copy:
+   - **Mac / Linux:** `python3 sync_from_github.py ~/Desktop/SpotsCopy`  
+     (You can change `SpotsCopy` to any folder name you like, and use a different path like `~/Documents/Spots` if you prefer.)
    - **Windows:** `python sync_from_github.py C:\Users\YourName\Desktop\SpotsCopy`  
-     (Use your real username and path.)
-5. The script will create that folder (if needed) and put a full copy from GitHub there.
+     (Replace `YourName` with your Windows username. You can use a different folder name or path.)
+5. The script will create that folder and put a full copy from GitHub there. Your waypoint files will be inside.
 
-### Later — update that copy
+---
 
-1. Open a terminal and go into the **copy** folder (the one you created with the script).
+## Update your copy (get the latest from GitHub)
+
+Whenever you want to refresh your copy with the latest waypoints:
+
+1. Open a terminal and go into the **spots** folder (the one that contains `sync_from_github.py` — the one you cloned or downloaded, not necessarily the copy folder).
 2. Run:
    - **Mac / Linux:** `python3 sync_from_github.py`  
-   - **Windows:** `python sync_from_github.py`
-3. The script will pull the latest changes from GitHub into that folder.
+     (If your copy is in a specific place, you can add it: `python3 sync_from_github.py ~/Desktop/SpotsCopy`)
+   - **Windows:** `python sync_from_github.py`  
+     (Or add your copy path: `python sync_from_github.py C:\Users\YourName\Desktop\SpotsCopy`)
+3. The script will update that copy with the latest changes from GitHub.
 
-**Optional — run every hour:** After a sync, if the script asks “Set up hourly job now?” and you type **y**, it will update that folder from GitHub every hour automatically.
+**Optional — run every hour:** After a sync, the script may ask: “Set up hourly job now?” If you type **y** and press Enter, your computer will update your copy from GitHub once every hour automatically.
 
 ---
 
 ## Remove the “every hour” sync
 
-If you said yes to the hourly job and later want to turn it off:
+If you set up the hourly update and later want to turn it off:
 
-1. Open a terminal and go into the **Spots** folder (the one that contains `remove_schedule.py`).
+1. Open a terminal and go into the **spots** folder (the one that contains `remove_schedule.py`).
 2. Run:
    - **Mac / Linux:** `python3 remove_schedule.py`  
    - **Windows:** `python remove_schedule.py`
@@ -120,8 +94,37 @@ If you said yes to the hourly job and later want to turn it off:
 
 | Goal | What to run |
 |------|-------------|
-| This computer has the main folder; send changes to GitHub | `python3 sync_to_github.py` (Mac/Linux) or `python sync_to_github.py` (Windows) |
-| Get or update a copy from GitHub | `python3 sync_from_github.py` or `python3 sync_from_github.py /path/to/copy` (Mac/Linux); same with `python` on Windows |
+| Get or update my copy from GitHub | `python3 sync_from_github.py` or `python3 sync_from_github.py /path/to/my/copy` (Mac/Linux); same with `python` on Windows |
 | Stop the hourly sync on this computer | `python3 remove_schedule.py` (Mac/Linux) or `python remove_schedule.py` (Windows) |
 
 Repo: [github.com/DougCarroll/spots](https://github.com/DougCarroll/spots)
+
+---
+
+## Advanced Users
+
+These steps are for users who **create or edit** the waypoints and want to **send changes to GitHub** (e.g. the person who maintains the main Spots folder).
+
+### Sync this folder to GitHub
+
+Use this on the computer where you keep your main Spots folder (the one you want to send *to* GitHub).
+
+1. Put this whole **Spots** folder somewhere you’ll remember (e.g. Documents, Desktop, or iCloud).
+2. Open a terminal:
+   - **Mac:** Open **Terminal** and type: `cd ` (with a space), then drag the **Spots** folder onto the Terminal window and press Enter.
+   - **Windows:** Open **Command Prompt** or **PowerShell**, type: `cd ` (with a space), then drag the **Spots** folder into the window and press Enter.
+   - **Linux:** Open a terminal, then type: `cd ` and the path to the Spots folder (or drag the folder in).
+3. Run the sync script:
+   - **Mac / Linux:** `python3 sync_to_github.py`  
+   - **Windows:** `python sync_to_github.py`
+4. The first time, the script may ask you to install Git or log in to GitHub. Do what it says.
+5. When it finishes, your folder is synced to GitHub. Run the same command anytime you’ve added or changed waypoints.
+
+**Optional — run every hour:** After a sync, the script may ask: “Set up hourly job now?” If you type **y** and press Enter, it will set up your computer to sync this folder to GitHub once every hour automatically.
+
+### Quick reference (sending to GitHub)
+
+| Goal | What to run |
+|------|-------------|
+| Send this folder to GitHub | `python3 sync_to_github.py` (Mac/Linux) or `python sync_to_github.py` (Windows) |
+| Stop the hourly sync | `python3 remove_schedule.py` (Mac/Linux) or `python remove_schedule.py` (Windows) |
