@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:uuidx="http://www.garmin.com/xmlschemas/IdentifierExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema" creator="Burnt Toast GPX Creator" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/IdentifierExtension/v1 http://www.garmin.com/xmlschemas/IdentifierExtension.xsd">
+  <metadata>
+    <author>
+      <name>Burnt Toast</name>
+      <email id="doug" domain="svburnttoast.com"/>
+    </author>
+    <copyright author="Douglas Carroll">
+      <year>2026</year>
+    </copyright>
+    <link href="https://svburnttoast.com/">
+      <text>SV Burnt Toast</text>
+    </link>
+    <time>2026-02-07T21:02:39.700Z</time>
+    <bounds minlat="17.750000" minlon="-67.200000" maxlat="17.750000" maxlon="-67.200000"/>
+  </metadata>
+  <wpt lat="17.750000" lon="-67.200000">
+    <name>Rojo</name>
+    <desc/>
+    <sym>WayPoint</sym>
+    <extensions>
+      <uuidx:uuid>93d01f30-eefd-443a-83a0-ca5891858024</uuidx:uuid>
+    </extensions>
+  </wpt>
+</gpx>

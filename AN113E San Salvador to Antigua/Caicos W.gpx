@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:uuidx="http://www.garmin.com/xmlschemas/IdentifierExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema" creator="Burnt Toast GPX Creator" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/IdentifierExtension/v1 http://www.garmin.com/xmlschemas/IdentifierExtension.xsd">
+  <metadata>
+    <author>
+      <name>Burnt Toast</name>
+      <email id="doug" domain="svburnttoast.com"/>
+    </author>
+    <copyright author="Douglas Carroll">
+      <year>2026</year>
+    </copyright>
+    <link href="https://svburnttoast.com/">
+      <text>SV Burnt Toast</text>
+    </link>
+    <time>2026-02-07T20:56:32.807Z</time>
+    <bounds minlat="21.500000" minlon="-72.733333" maxlat="21.500000" maxlon="-72.733333"/>
+  </metadata>
+  <wpt lat="21.500000" lon="-72.733333">
+    <name>Caicos W</name>
+    <desc/>
+    <sym>WayPoint</sym>
+    <extensions>
+      <uuidx:uuid>56a172fa-07f6-40ba-ae00-191d301a3684</uuidx:uuid>
+    </extensions>
+  </wpt>
+</gpx>

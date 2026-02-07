@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:uuidx="http://www.garmin.com/xmlschemas/IdentifierExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema" creator="Burnt Toast GPX Creator" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/IdentifierExtension/v1 http://www.garmin.com/xmlschemas/IdentifierExtension.xsd">
+  <metadata>
+    <author>
+      <name>Burnt Toast</name>
+      <email id="doug" domain="svburnttoast.com"/>
+    </author>
+    <copyright author="Douglas Carroll">
+      <year>2026</year>
+    </copyright>
+    <link href="https://svburnttoast.com/">
+      <text>SV Burnt Toast</text>
+    </link>
+    <time>2026-02-07T21:00:45.078Z</time>
+    <bounds minlat="18.666667" minlon="-68.166667" maxlat="18.666667" maxlon="-68.166667"/>
+  </metadata>
+  <wpt lat="18.666667" lon="-68.166667">
+    <name>Engano</name>
+    <desc/>
+    <sym>WayPoint</sym>
+    <extensions>
+      <uuidx:uuid>48e35674-4ce9-435e-bcd0-37c734009fa2</uuidx:uuid>
+    </extensions>
+  </wpt>
+</gpx>
