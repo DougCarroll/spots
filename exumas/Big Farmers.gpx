@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:uuidx="http://www.garmin.com/xmlschemas/IdentifierExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema" creator="Burnt Toast GPX Creator" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/IdentifierExtension/v1 http://www.garmin.com/xmlschemas/IdentifierExtension.xsd">
+  <metadata>
+    <author>
+      <name>Burnt Toast</name>
+      <email id="doug" domain="svburnttoast.com"/>
+    </author>
+    <copyright author="Douglas Carroll">
+      <year>2026</year>
+    </copyright>
+    <link href="https://svburnttoast.com/">
+      <text>SV Burnt Toast</text>
+    </link>
+    <time>2026-02-16T20:52:16.609Z</time>
+    <bounds minlat="23.921667" minlon="-76.326667" maxlat="23.921667" maxlon="-76.326667"/>
+  </metadata>
+  <wpt lat="23.921667" lon="-76.326667">
+    <name>Big Farmers</name>
+    <desc/>
+    <sym>WayPoint</sym>
+    <extensions>
+      <uuidx:uuid>ce96d93b-6957-445e-840d-b564ecdd7044</uuidx:uuid>
+    </extensions>
+  </wpt>
+</gpx>
